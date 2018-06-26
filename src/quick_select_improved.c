@@ -36,8 +36,8 @@ int quick_select(int A[], int n, int k){
      A[l-1] = q;
  
      if(k<l-1) return quick_select(A,l-1,k);
-     else if(l<=k && k<=r) return pivot;
-     else return quick_select(A+r+1,n-r-1,k-r);
+     else if(l-1<=k && k<=r) return pivot;
+     else return quick_select(A+r+1,n-r-1,k-r-1);
 }
 
 int main(){
