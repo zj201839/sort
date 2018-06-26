@@ -23,7 +23,7 @@ void quick_sort(int A[], int n){
   int w = A[0];
   A[0] = A[j-1];
   A[j-1] = w;
-  quick_sort(A,j);
+  quick_sort(A,j-1);
   quick_sort(A+j,n-j);
   }
 
