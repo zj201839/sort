@@ -33,7 +33,7 @@ void quick_sort(int A[], int n){
      int q = A[0];
      A[0] = A[l-1];
      A[l-1] = q;
-     quick_sort(A,l);
+     quick_sort(A,l-1);
      quick_sort(A+r+1,n-r-1);   
 }
 
